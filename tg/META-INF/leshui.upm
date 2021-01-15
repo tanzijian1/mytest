@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module name="tg">
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.ISyncLeShuiBilllService</interface>
+		  <implementation>nc.impl.tg.outside.SyncLeShuiBillServicel</implementation>
+		</component>
+	</public>
+	<private>
+	</private>
+</module>

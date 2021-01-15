@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 转单参照单据信息 -->
+	<bean id="refInfo" class="nc.ui.pubapp.billref.src.RefInfo">
+		<property name="headVO">
+			<bean class="nc.vo.tgfn.paymentrequest.Payrequest">
+			</bean>
+		</property>
+		<property name="bodyVO">
+			<bean class="nc.vo.tgfn.paymentrequest.Business_b">
+			</bean>
+		</property>
+		<property name="billVO">
+			<bean class="nc.vo.tgfn.paymentrequest.AggPayrequest">
+			</bean>
+		</property>
+		<property name="viewVO">
+			<bean class="nc.vo.tgfn.paymentrequest.PayApplyViewVO">
+			</bean>
+		</property>
+		<property name="billNodeKey" value="bt" />
+		<property name="billViewNodeKey" value="bt" />
+		<property name="sourcevoPkName" value="pk_payreq" />
+		<property name="sourcevoBillNOName" value="billno" />
+		
+		<!-- 单据参照主命令按钮扩展-->
+	    <!-- <property name="mainActions">
+			<list>
+				<bean class="nc.ui.pubapp.billref.src.action.OKAction">
+				</bean>
+			</list>
+		</property> -->
+		<!-- 单据参照操作按钮扩展-->
+		<property name="operateActions">
+			<list>
+			    <!-- 单据参照按钮扩展 -->
+				<bean class="nc.ui.pubapp.billref.src.action.AddAction">
+				</bean>
+			</list>
+		</property>
+	    <!-- 单据查询服务 nc.ui.pubapp.uif2app.model.IQueryService -->
+		<property name="queryService" ref ="queryService"/>
+		
+		<!-- 单据参照UI初始化处理器，可以处理精度，显示或其它-->
+		 <!-- <property name="refBillPanelInit">
+			<bean class="nc.ui.arap.billref.ArapRefUIInit">
+			</bean>
+		</property> -->
+		<!-- 单据参照的值获取器 处理确认后的数据处理-->
+		<property name="billListValueGetter">
+			<bean class="nc.ui.pubapp.billref.src.value.DefaultValueGetter">
+			</bean>
+		</property> 
+		<!-- 单据视图UI值设置器 处理显示前逻辑-->
+		<!-- <property name="billListPanelValueSetter">
+			<bean class="nc.ui.pubapp.billref.src.value.MDBillViewValueSetter">
+			</bean>
+		</property> -->
+	</bean>
+	
+	<bean id="queryService" class="nc.ui.tg.payapplication.FN01QueryServiceImpl">
+		
+	</bean>
+
+</beans>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module name="tg">
+  <public>
+  	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IDataTypeMaintain</interface>
+	  <implementation>nc.impl.tg.DataTypeMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IFinTypeMaintain</interface>
+	  <implementation>nc.impl.tg.FinTypeMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IOrganizationMaintain</interface>
+	  <implementation>nc.impl.tg.OrganizationMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IOrganizationTypeMaintain</interface>
+	  <implementation>nc.impl.tg.OrganizationTypeMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IStandardMaintain</interface>
+	  <implementation>nc.impl.tg.StandardMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IFinancingExpenseMaintain</interface>
+	  <implementation>nc.impl.tg.FinancingExpenseMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IFinancingPlanMaintain</interface>
+	  <implementation>nc.impl.tg.FinancingPlanMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IFinancingTotalMaintain</interface>
+	  <implementation>nc.impl.tg.FinancingTotalMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IMoonFinancingPlanMaintain</interface>
+	  <implementation>nc.impl.tg.MoonFinancingPlanMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IFischemeMaintain</interface>
+	  <implementation>nc.impl.tg.FischemeMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IProjectdataMaintain</interface>
+	  <implementation>nc.impl.tg.ProjectdataMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITG_GroupDataMaintain</interface>
+	  <implementation>nc.impl.tg.TG_GroupDataMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITGRZ_MortgageAgreementMaintain</interface>
+	  <implementation>nc.impl.tg.TGRZ_MortgageAgreementMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISyncBPMBillServcie</interface>
+	  <implementation>nc.impl.tg.outside.SyncBPMBillServiceImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.bpm.IPushBillToBpm</interface>
+	  <implementation>nc.impl.tg.bpm.PushBillToBpmImpl</implementation>
+	</component>	
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.rz.report.ITGRZReprotDataProcess</interface>
+	  <implementation>nc.impl.tg.rz.report.TGRZReprotDataProcessImpl</implementation>
+	</component>	
+     <component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IMortgagelistdetailed</interface>
+	  <implementation>nc.impl.tg.MortgagelistdetailedImpl</implementation>
+	</component>	
+	  <component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.settlement.ISettleAfterService</interface>
+	  <implementation>nc.bs.tg.settlement.SettleAfterServiceIImpl</implementation>
+	</component>	
+	<component remote="true" singleton="true" supportAlias="true" tx="CMT">
+           <interface>nc.itf.tg.outside.IFishchemeChange</interface>       
+           <implementation>nc.impl.pub.ace.Fishchemechangeimpl</implementation>
+    </component>
+    <component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.IRepaymentRefContractService</interface>
+	  <implementation>nc.impl.pub.ace.RepaymentRefContractServiceImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ISaveOutsideLog</interface>
+	  <implementation>nc.impl.pub.ace.SaveOutsideLogIpml</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISRMSupplierAccount</interface>
+	  <implementation>nc.bs.tg.outside.srm.SRMSupplierAccountImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISaveLogService</interface>
+	  <implementation>nc.impl.tg.outside.SaveLogServiceImpl</implementation>
+	</component>
+  </public> 
+</module> 

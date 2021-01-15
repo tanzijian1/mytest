@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module name="tg">
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.bs.tg.outside.infotransform.IInfoTransformService</interface>
+		  <implementation>nc.impl.tg.outside.infotransform.InfoTransformServiceImpl</implementation>
+		</component>
+		
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IUnsavebillAndDeleteBill</interface>
+	  <implementation>nc.impl.tg.UnsavebillAndDeleteBillimpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.IUpdateVOService</interface>
+		  <implementation>nc.impl.tg.bpm.UpdateVOServiceImpl</implementation>
+		</component>
+	</public>
+	<private>
+	</private>
+</module>

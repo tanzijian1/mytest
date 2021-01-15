@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module name="tg">
+  <public>
+  	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.apply.IApplyBillSyncService</interface>
+	  <implementation>nc.impl.tg.apply.ApplyBillSyncServiceImpl</implementation>
+	</component>
+
+  	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISyncSaleBillServcie</interface>
+	  <implementation>nc.impl.tg.outside.SyncSaleBillServcieImpl</implementation>
+	</component>
+	 <component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISyncEBSServcie</interface>
+	  <implementation>nc.impl.tg.outside.SyncEBSServcieImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ICarryoverCostMaintain</interface>
+	  <implementation>nc.impl.tg.CarryoverCostMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IChangeBillMaintain</interface>
+	  <implementation>nc.impl.tg.ChangeBillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IContractApportionmentMaintain</interface>
+	  <implementation>nc.impl.tg.ContractApportionmentMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ICostAccrueBillMaintain</interface>
+	  <implementation>nc.impl.tg.CostAccrueBillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IDistributionMaintain</interface>
+	  <implementation>nc.impl.tg.DistributionMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IExHouseTransferBillMaintain</interface>
+	  <implementation>nc.impl.tg.ExHouseTransferBillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IInternalInterestMaintain</interface>
+	  <implementation>nc.impl.tg.InternalInterestMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IInvoicebillMaintain</interface>
+	  <implementation>nc.impl.tg.InvoicebillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IOutBillMaintain</interface>
+	  <implementation>nc.impl.tg.OutBillMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IPaymentRequestMaintain</interface>
+	  <implementation>nc.impl.tg.PaymentRequestMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IRenameChangeBillMaintain</interface>
+	  <implementation>nc.impl.tg.RenameChangeBillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITargetActivationMaintain</interface>
+	  <implementation>nc.impl.tg.TargetActivationMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITemporaryEstimateMaintain</interface>
+	  <implementation>nc.impl.tg.TemporaryEstimateMaintainImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITransferBillMaintain</interface>
+	  <implementation>nc.impl.tg.TransferBillMaintainImpl</implementation>
+	</component>
+		<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.ITartingBillMaintain</interface>
+	  <implementation>nc.impl.tg.TartingBillMaintainImpl</implementation>
+	</component>
+
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IAGoodsDetailMaintain</interface>
+	  <implementation>nc.impl.tg.AGoodsDetailMaintainImpl</implementation>
+	</component>
+	
+  </public> 
+</module> 

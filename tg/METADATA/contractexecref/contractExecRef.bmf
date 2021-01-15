@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><component conRouterType="手动" createIndustry="0" createTime="2019-10-31 18:30:26" creator="YONYOU NC" description="" displayName="支出合同参照" fromSourceBmf="true" gencodestyle="NC传统样式" help="" id="0eec3756-651a-4ac1-8abe-4c1aad08dc28" industry="0" industryChanged="false" industryIncrease="false" industryName="基础行业" isSource="false" isbizmodel="false" mainEntity="bc43b8e4-7669-4373-a143-79f2f2169379" metaType=".bmf" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2019-11-18 14:53:45" name="contractExecRef" namespace="tg" ownModule="tg" preLoad="false" programcode="0" resModuleName="contractExecRef" resid="" version="17" versionType="0">
+    <celllist>
+        <entity accessorClassName="nc.md.model.access.javamap.NCBeanStyle" bizItfImpClassName="" componentID="0eec3756-651a-4ac1-8abe-4c1aad08dc28" createIndustry="0" createTime="2019-10-31 18:30:32" creator="YONYOU NC" czlist="支出合同付款计划" description="" displayName="支出合同付款计划参照" fullClassName="nc.vo.tg.component.Contractexec" height="100" help="" id="bc43b8e4-7669-4373-a143-79f2f2169379" industryChanged="false" isAuthen="true" isCreateSQL="true" isExtendBean="false" isPrimary="true" isSource="true" keyAttributeId="f24d4851-5800-4c78-9ad7-056de6263b66" modInfoClassName="" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2019-11-18 15:07:20" name="contractexec" resid="" stereoType="" tableName="tgfn_payrequest" userDefClassName="" versionType="0" visibility="public" width="100" x="307" y="76">
+            <attributelist>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="bc43b8e4-7669-4373-a143-79f2f2169379" createIndustry="0" dataType="BS000010000100001051" dataTypeStyle="SINGLE" dbtype="char" defaultValue="" description="" displayName="付款申请单pk" dynamic="true" dynamicTable="" fieldName="pk_payreq" fieldType="char" fixedLength="false" forLocale="false" help="" id="f24d4851-5800-4c78-9ad7-056de6263b66" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="true" isNullable="false" isReadOnly="false" isShare="false" isSource="true" length="20" maxValue="" minValue="" modifyIndustry="0" name="pk_payreq" notSerialize="false" precise="" refModelName="" resid="" sequence="0" typeDisplayName="UFID" typeName="UFID" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="bc43b8e4-7669-4373-a143-79f2f2169379" createIndustry="0" dataType="BS000010000100001001" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="EBS请款单号" dynamic="true" dynamicTable="" fieldName="def2" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="ba407d04-47be-442b-aa0b-15fa4a7e055f" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="50" maxValue="" minValue="" modifyIndustry="0" name="def2" notSerialize="false" precise="" refModelName="" resid="" sequence="1" typeDisplayName="String" typeName="String" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="bc43b8e4-7669-4373-a143-79f2f2169379" createIndustry="0" dataType="BS000010000100001001" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="NC付款申请单号" dynamic="true" dynamicTable="" fieldName="billno" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="06bfe2b6-d4f0-493e-aa1f-415a7f2e8a1b" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="50" maxValue="" minValue="" modifyIndustry="0" name="billno" notSerialize="false" precise="" refModelName="" resid="" sequence="2" typeDisplayName="String" typeName="String" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="bc43b8e4-7669-4373-a143-79f2f2169379" createIndustry="0" dataType="BS000010000100001056" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="本次请款累计付款金额" dynamic="true" dynamicTable="" fieldName="def25" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="f570cea3-1844-4612-b9c4-a4292d27d5c5" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="101" maxValue="" minValue="" modifyIndustry="0" name="def25" notSerialize="false" precise="" refModelName="" resid="" sequence="3" typeDisplayName="自定义项" typeName="CUSTOM" versionType="0" visibility="public"/>
+            </attributelist>
+            <operationlist/>
+            <busiitfs>
+                <itfid>6c8722b9-911a-489b-8d0d-18bd3734fcf6</itfid>
+            </busiitfs>
+            <busimaps>
+                <busimap attrid="f24d4851-5800-4c78-9ad7-056de6263b66" attrpath="" attrpathid="" busiitfattrid="5dd3c721-22ad-42b1-9c10-4351c236bc77" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="c8334364-7ab9-4266-8d4b-e74537935e46" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="ecf1b76a-6e44-42e2-a55e-87596504775b" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+                <busimap attrid="06bfe2b6-d4f0-493e-aa1f-415a7f2e8a1b" attrpath="" attrpathid="" busiitfattrid="d32cc17b-f415-415a-923f-0764443eb102" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+                <busimap attrid="06bfe2b6-d4f0-493e-aa1f-415a7f2e8a1b" attrpath="" attrpathid="" busiitfattrid="89578a97-42fe-439b-827c-8eabd9e3604c" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="a47e6cda-09e4-480b-923f-ec6f41e3e06c" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="bc43b8e4-7669-4373-a143-79f2f2169379"/>
+            </busimaps>
+            <canzhaolist>
+                <canzhao cellid="bc43b8e4-7669-4373-a143-79f2f2169379" isdefault="false" name="支出合同付款计划"/>
+            </canzhaolist>
+            <accessor classFullname="nc.md.model.access.javamap.NCBeanStyle" displayName="NCVO" name="NCVO">
+                <properties/>
+            </accessor>
+        </entity>
+        <Reference componentID="0eec3756-651a-4ac1-8abe-4c1aad08dc28" createIndustry="0" createTime="2019-05-28 15:38:20" creator="YONYOU NC" description="" displayName="引用：IBDObject" fullClassName="nc.vo.tg.financingexpense.reference2" height="122" help="" id="5753a94e-c6a3-44e2-a586-f2fcc66a7c34" industryChanged="false" isSource="true" mdFilePath="eta\general_interface.bmf" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2019-11-18 14:53:45" moduleName="baseapp" name="reference2" refId="6c8722b9-911a-489b-8d0d-18bd3734fcf6" resid="" versionType="0" visibility="public" width="100" x="485" y="160"/>
+    </celllist>
+    <connectlist>
+        <busiitfconnection bizItfImpClassName="" componentID="0eec3756-651a-4ac1-8abe-4c1aad08dc28" createIndustry="0" createTime="2019-10-31 18:31:01" creator="" description="" displayName="" help="" id="aa7818fc-fc35-4267-817f-b2f5a116543c" industryChanged="false" isSource="false" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2019-10-31 18:31:01" name="busiItf connection" realsource="bc43b8e4-7669-4373-a143-79f2f2169379" realtarget="6c8722b9-911a-489b-8d0d-18bd3734fcf6" source="bc43b8e4-7669-4373-a143-79f2f2169379" target="5753a94e-c6a3-44e2-a586-f2fcc66a7c34" versionType="0">
+            <points/>
+        </busiitfconnection>
+    </connectlist>
+    <refdepends>
+        <dependfile entityid="6c8722b9-911a-489b-8d0d-18bd3734fcf6"/>
+    </refdepends>
+    <refdependLoseIDs/>
+    <cellRemoveLog/>
+    <rulers>
+        <ruler isHorizontal="true" unit="0">
+            <guideList/>
+        </ruler>
+        <ruler isHorizontal="false" unit="0">
+            <guideList/>
+        </ruler>
+    </rulers>
+</component>

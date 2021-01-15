@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module name="tg">
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.fund.rz.report.ITGFundReprotDataProcess</interface>
+		  <implementation>nc.impl.tg.fund.rz.report.TGFundReprotDataProcessImpl</implementation>
+		</component>
+	</public>
+	<private>
+	</private>
+</module>

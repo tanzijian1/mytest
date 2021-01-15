@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module name="tg">
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.ISyncWordBillServcie</interface>
+		  <implementation>nc.impl.tg.outside.SyncWordBillServcie</implementation>
+		</component>
+				<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.ISyncInvBillServcie</interface>
+		  <implementation>nc.impl.tg.outside.SyncInvBillServcie</implementation>
+		</component>
+	</public>
+	<private>
+	</private>
+</module>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module name="tg">
+  <public>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.IApprovalproMaintain</interface>
+	  <implementation>nc.impl.tg.ApprovalproMaintainImpl</implementation>
+	</component>
+
+  </public> 
+</module> 

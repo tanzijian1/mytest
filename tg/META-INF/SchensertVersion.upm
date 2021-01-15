@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module name="tg">
+  <public>
+    <component remote="true" singleton="true" supportAlias="true" tx="CMT">
+           <interface>nc.itf.tg.outside.IFishchemeChange</interface>       
+           <implementation>nc.impl.pub.ace.Fishchemechangeimpl</implementation>
+    </component>
+  </public>
+</module>

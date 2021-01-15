@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module name="tg">
+  <public>
+  	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.ISyncSaleBPMBillServcie</interface>
+	  <implementation>nc.impl.tg.outside.SyncSaleBPMBillServiceImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.bpm.IPushSaleBillToBpm</interface>
+	  <implementation>nc.impl.tg.bpm.PushSaleBillToBpmImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.IPushBPMBillFileService</interface>
+	  <implementation>nc.impl.tg.outside.PushBPMBillFileServiceImpl</implementation>
+	</component>
+	<component remote="true" singleton="true"  tx="CMT">
+	  <interface>nc.itf.tg.outside.IProjectDocSyn</interface>
+	  <implementation>nc.impl.tg.outside.ProjectDocSynImpl</implementation>
+	</component>
+  </public> 
+</module> 

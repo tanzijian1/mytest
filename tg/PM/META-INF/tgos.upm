@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module name="tg">
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.ISyncTGInfoServcie</interface>
+		  <implementation>nc.impl.tg.outside.SyncTGInfoServcieImpl</implementation>
+		</component>
+	</public>
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.IPush36ZJBillTOBPM</interface>
+		  <implementation>nc.bs.tg.push.bpm.Push36ZJBillTOBPMImpl</implementation>
+		</component>
+	</public>
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.IPushBPMLLBillService</interface>
+		  <implementation>nc.impl.tg.outside.PushBPMLLBillServiceImpl</implementation>
+		</component>
+	</public>
+	<public>
+		<component remote="true" singleton="true"  tx="CMT">
+		  <interface>nc.itf.tg.outside.IInsertArchives</interface>
+		  <implementation>nc.impl.tg.outside.InsertArchivesImpl</implementation>
+		</component>
+	</public>
+	<private>
+	</private>
+</module>
+

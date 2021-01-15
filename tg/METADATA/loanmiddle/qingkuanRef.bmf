@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><component conRouterType="曼哈顿直角" createIndustry="0" createTime="2020-04-07 16:50:40" creator="YONYOU NC" description="" displayName="请款单号参照" fromSourceBmf="true" gencodestyle="自定义样式" help="" id="f1a22938-6afa-4767-95f4-0296ab56b0c1" industry="0" industryChanged="false" industryIncrease="false" industryName="" isSource="false" isbizmodel="false" mainEntity="e64fe477-1be4-4c07-a0b0-30ff835672f6" metaType=".bmf" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2020-04-09 17:05:04" name="qingkuanRef" namespace="tg" ownModule="tg" preLoad="false" programcode="0" resModuleName="qingkuanRef" resid="" version="8" versionType="0">
+    <celllist>
+        <entity accessorClassName="nc.md.model.access.javamap.AggVOStyle" bizItfImpClassName="" componentID="f1a22938-6afa-4767-95f4-0296ab56b0c1" createIndustry="0" createTime="2020-04-07 16:50:47" creator="YONYOU NC" czlist="请款单参照" description="" displayName="请款单号" fullClassName="nc.vo.tg.qingkuanref.QingkuanRef" height="208" help="" id="e64fe477-1be4-4c07-a0b0-30ff835672f6" industryChanged="false" isAuthen="true" isCreateSQL="true" isExtendBean="false" isPrimary="true" isSource="true" keyAttributeId="532262a3-75cb-44a4-be18-0080f28cd176" modInfoClassName="" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2020-04-09 17:11:13" name="qingkuanRef" resid="" stereoType="" tableName="v_qingkuan" userDefClassName="" versionType="0" visibility="public" width="232" x="316" y="109">
+            <attributelist>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="e64fe477-1be4-4c07-a0b0-30ff835672f6" createIndustry="0" dataType="BS000010000100001051" dataTypeStyle="SINGLE" dbtype="char" defaultValue="" description="" displayName="主键" dynamic="false" dynamicTable="" fieldName="pk_key" fieldType="char" fixedLength="false" forLocale="false" help="" id="532262a3-75cb-44a4-be18-0080f28cd176" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="true" isNullable="false" isReadOnly="false" isShare="false" isSource="true" length="20" maxValue="" minValue="" modifyIndustry="0" name="pk_key" notSerialize="false" precise="" refModelName="" resid="" sequence="0" typeDisplayName="UFID" typeName="UFID" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="e64fe477-1be4-4c07-a0b0-30ff835672f6" createIndustry="0" dataType="BS000010000100001001" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="请款单号" dynamic="false" dynamicTable="" fieldName="billno" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="f35837b6-45bd-4711-8374-5a2ea321d418" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="50" maxValue="" minValue="" modifyIndustry="0" name="billno" notSerialize="false" precise="" refModelName="" resid="" sequence="1" typeDisplayName="String" typeName="String" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="e64fe477-1be4-4c07-a0b0-30ff835672f6" createIndustry="0" dataType="BS000010000100001001" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="合同主键" dynamic="false" dynamicTable="" fieldName="contractnum" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="837dd3e3-4c1b-43fa-8d80-28cf6128258f" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="50" maxValue="" minValue="" modifyIndustry="0" name="contractnum" notSerialize="false" precise="" refModelName="" resid="" sequence="2" typeDisplayName="String" typeName="String" versionType="0" visibility="public"/>
+                <attribute accessStrategy="" accesspower="false" accesspowergroup="" calculation="false" classID="e64fe477-1be4-4c07-a0b0-30ff835672f6" createIndustry="0" dataType="BS000010000100001001" dataTypeStyle="SINGLE" dbtype="varchar" defaultValue="" description="" displayName="金额" dynamic="false" dynamicTable="" fieldName="money" fieldType="varchar" fixedLength="false" forLocale="false" help="" id="7a3b61ee-b527-446f-86c9-04c3867e4bed" industryChanged="false" isActive="true" isAuthorization="true" isDefaultDimensionAttribute="false" isDefaultMeasureAttribute="false" isFeature="false" isGlobalization="false" isHide="false" isKey="false" isNullable="true" isReadOnly="false" isShare="false" isSource="true" length="50" maxValue="" minValue="" modifyIndustry="0" name="money" notSerialize="false" precise="" refModelName="" resid="" sequence="3" typeDisplayName="String" typeName="String" versionType="0" visibility="public"/>
+            </attributelist>
+            <operationlist/>
+            <busiitfs>
+                <itfid>6c8722b9-911a-489b-8d0d-18bd3734fcf6</itfid>
+            </busiitfs>
+            <busimaps>
+                <busimap attrid="532262a3-75cb-44a4-be18-0080f28cd176" attrpath="" attrpathid="" busiitfattrid="5dd3c721-22ad-42b1-9c10-4351c236bc77" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="c8334364-7ab9-4266-8d4b-e74537935e46" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="ecf1b76a-6e44-42e2-a55e-87596504775b" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+                <busimap attrid="f35837b6-45bd-4711-8374-5a2ea321d418" attrpath="" attrpathid="" busiitfattrid="d32cc17b-f415-415a-923f-0764443eb102" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+                <busimap attrid="f35837b6-45bd-4711-8374-5a2ea321d418" attrpath="" attrpathid="" busiitfattrid="89578a97-42fe-439b-827c-8eabd9e3604c" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+                <busimap attrid="" attrpath="" attrpathid="" busiitfattrid="a47e6cda-09e4-480b-923f-ec6f41e3e06c" busiitfid="6c8722b9-911a-489b-8d0d-18bd3734fcf6" cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6"/>
+            </busimaps>
+            <canzhaolist>
+                <canzhao cellid="e64fe477-1be4-4c07-a0b0-30ff835672f6" isdefault="false" name="请款单参照"/>
+            </canzhaolist>
+            <accessor classFullname="nc.md.model.access.javamap.AggVOStyle" displayName="AggVO" name="AggVO">
+                <properties>
+                    <property classid="e64fe477-1be4-4c07-a0b0-30ff835672f6" displayName="包装类名" name="wrapclsname" sequence="0" value="nc.vo.tg.qingkuanref.AggQingkuanRef"/>
+                </properties>
+            </accessor>
+        </entity>
+        <Reference componentID="f1a22938-6afa-4767-95f4-0296ab56b0c1" createIndustry="0" createTime="2020-04-07 16:51:37" creator="" description="" displayName="引用：IBDObject" fullClassName="nc.vo.tg.qingkuanref.reference" height="100" help="" id="bdc94b72-adf1-4c8c-a418-b460b6a3c478" industryChanged="false" isSource="false" mdFilePath="\meta\general_interface.bmf" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2020-04-09 17:05:04" moduleName="uap" name="reference" refId="6c8722b9-911a-489b-8d0d-18bd3734fcf6" resid="" versionType="0" visibility="public" width="100" x="136" y="52"/>
+    </celllist>
+    <connectlist>
+        <busiitfconnection bizItfImpClassName="" componentID="f1a22938-6afa-4767-95f4-0296ab56b0c1" createIndustry="0" createTime="2020-04-07 16:52:04" creator="" description="" displayName="" help="" id="d47e06c4-26ae-4105-a870-f04c32307fec" industryChanged="false" isSource="false" modifier="YONYOU NC" modifyIndustry="0" modifyTime="2020-04-07 16:52:04" name="busiItf connection" realsource="e64fe477-1be4-4c07-a0b0-30ff835672f6" realtarget="6c8722b9-911a-489b-8d0d-18bd3734fcf6" source="e64fe477-1be4-4c07-a0b0-30ff835672f6" target="bdc94b72-adf1-4c8c-a418-b460b6a3c478" versionType="0">
+            <points/>
+        </busiitfconnection>
+    </connectlist>
+    <refdepends>
+        <dependfile entityid="6c8722b9-911a-489b-8d0d-18bd3734fcf6"/>
+    </refdepends>
+    <refdependLoseIDs/>
+    <cellRemoveLog/>
+    <rulers>
+        <ruler isHorizontal="true" unit="0">
+            <guideList/>
+        </ruler>
+        <ruler isHorizontal="false" unit="0">
+            <guideList/>
+        </ruler>
+    </rulers>
+</component>

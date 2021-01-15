@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<!-- 环境变量 -->
+	<bean id="context" class="nc.vo.uif2.LoginContext">
+		<property name="nodeType"  value="ORG_NODE"></property>
+	</bean>
+	
+	<!-- 模型部分配置########################################################### -->
+	
+	<!-- 应用服务类，负责进行模型操作的处理 -->
+	<bean id="modelService" class="nc.ui.tmpub.version.model.VersionTreeModelService"/>
+	
+	<bean id="cardModelService" class="nc.ui.tmpub.version.model.VersionCardModelService"/>
+	
+	<!-- 对象转换器工厂，由此获取操作对象的特征信息 -->
+	<!-- <bean id="boadatorfactory" class="nc.vo.bd.meta.BDObjectAdpaterFactory"/> -->
+	<bean id="boadatorfactory" class="nc.ui.tmpub.version.view.VersionObjectFactory">
+		<property name="mode" value="VERSION"/>
+	</bean>
+	
+	<!-- 建树策略以及适配工厂 -->
+	<!--
+	<bean id="treeCreateStrategy" class="nc.vo.bd.meta.BDObjectTreeCreateStrategy">
+		<property name="factory" ref="boadatorfactory"/>
+		<property name="rootName" value="历史版本"/>
+	</bean> 
+	 -->
+	<bean id="treeCreateStrategy" class="nc.ui.tmpub.version.view.VersionObjectTreeCreateStrategy">
+	</bean> 
+	
+	<!-- 层次应用模型 -->
+	<!--
+	<bean id="appModel" class="nc.ui.uif2.model.HierachicalDataAppModel">
+		<property name="service" ref="modelService"/>
+		<property name="treeCreateStrategy" ref="treeCreateStrategy"/>
+		<property name="businessObjectAdapterFactory" ref="boadatorfactory"/>
+		<property name="context" ref="context"/>
+	</bean>
+	 -->
+	<bean id="appModel" class="nc.ui.tmpub.version.model.VersionTreeModel">
+		<property name="service" ref="modelService"/>
+		<property name="treeCreateStrategy" ref="treeCreateStrategy"/>
+		<property name="businessObjectAdapterFactory" ref="boadatorfactory"/>
+		<property name="context" ref="context"/>
+	</bean>
+	
+	<bean id="cardModel" class="nc.ui.tmpub.version.model.VersionCardModel">
+		<property name="service" ref="modelService" />
+		<property name="businessObjectAdapterFactory" ref="boadatorfactory" />
+		<property name="context" ref="context" />
+	</bean>
+	
+	<!-- 数据模型管理器，主要负责各种方式的模型初始化 -->
+	<bean id="modelDataManager" class="nc.ui.tmpub.version.model.VersionModelManager">
+		<property name="model" ref="appModel"></property>
+		<property name="cardModel" ref="cardModel"></property>
+		<property name="modelServicer" ref="modelService"></property>
+		<property name="cardModelService" ref="cardModelService"></property>
+	</bean>
+	
+	<!-- 界面布局总装########################################################### -->
+	<bean id="container" class="nc.ui.uif2.TangramContainer" init-method="initUI">
+		<property name="constraints">
+			<list>
+				<bean id="left" class="nc.ui.uif2.tangramlayout.TangramLayoutConstraint">
+					<property name="newComponent" ref="treePanel"/>
+					<property name="direction" value="left"/>
+					<property name="dividerLocation" value="30"/>
+				</bean>
+				<bean id="right" class="nc.ui.uif2.tangramlayout.TangramLayoutConstraint">
+					<property name="newComponent" ref="propEditor"></property>
+					<property name="targetComponent" ref="treePanel"></property>
+					<property name="direction" value="right"></property>
+					<property name="dividerLocation" value="0.25f"></property>
+				</bean>
+			</list>
+		</property>
+		<property name="actions">
+			<list>
+				<ref bean="closeAction"/>
+				<ref bean="deleteAction"/>
+			</list>
+		</property>
+	</bean>
+	<!-- 界面元素 ###########################################################-->
+	<!--树控件-->
+	<bean id="treePanel" class="nc.ui.tmpub.version.view.VersionTreePanel" init-method="initUI">
+		<property name="model" ref="appModel"/>
+		<property name="treeCellRenderer" ref="treeCellRenderer"/>
+		<property name="cardEditor" ref="propEditor"/>
+	</bean>
+	
+	<bean id="treeCellRenderer" class="nc.ui.tmpub.version.view.VersionTreeCellRenderer"/>
+	<!--卡控件-->
+	<bean id="propEditor" class="nc.ui.tmpub.version.view.VersionCardEditor" init-method="initUI">
+		<property name="model" ref="appModel"/>
+	</bean>
+
+	<!--<bean id="cardLoadListener" class="nc.ui.tmpub.digit.listener.card.CardPanelLoadDigitListener"/>
+	
+	<bean id="digitMediator" class="nc.ui.pubapp.uif2app.model.AppEventHandlerMediator">
+        <property name="model" ref="appModel" />
+        <property name="handlerMap">
+            <map>
+                <entry key="nc.ui.pubapp.uif2app.event.card.CardPanelLoadEvent">
+                    <list>
+                        <ref bean="cardLoadListener"/>
+                    </list>
+                </entry>
+            </map>
+        </property>
+    </bean>
+	
+	--><bean id="closeAction" class="nc.ui.tmpub.version.action.VersionCloseAction">
+		<property name="context" ref="context"/>
+	</bean>
+	<bean id="deleteAction" class="nc.ui.tg.fischeme.action.VersionDeleteAction">
+	<property name="cardModel" ref="cardModel"></property>
+	<property name="appModel" ref="appModel"></property>
+			<property name="modelDataManager" ref="modelDataManager"></property>
+			<property name="treePanel" ref="treePanel"></property>
+			<property name="context" ref="context"/>
+	</bean>
+	<!--添加跳转-->
+    <bean id="InitDataListener" class="nc.ui.tmpub.version.listener.VersionInitDataListener">
+        <property name="appModel" ref="appModel" />
+        <property name="cardModel" ref="cardModel"/>
+        <property name="cardEditor" ref="propEditor"/>
+    </bean>
+</beans>
